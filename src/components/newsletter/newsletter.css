@@ -1,0 +1,76 @@
+.newsletter{
+    height: 380px;
+    width:99vw;
+    padding: 0 140px;
+    position: relative;
+    background-image: url('./img/backgroundNe.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.newsletter__background{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 380px;
+    width: 99vw;
+}
+.newsletter__textbox{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    text-align: left;
+}
+.newsletter__textbox > h2{
+    font-size: 45px;
+    margin-bottom: 0px;
+} 
+.newsletter__textbox>p {
+    margin: 0px;
+    opacity: .8;
+    font-size: 22px;
+}
+.newsletter__inputbox{
+    margin-top: 70px;
+    display: flex;
+}
+.newsletter__inputbox > input{
+    height: 45px;
+    width: 300px;
+    margin-right: 25px;
+    text-align: center;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.616);
+}
+.newsletter__inputbox>button {
+    height: 53px;
+    width: 140px;
+    background-color:#8E0C15;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 0px;
+}
+.newsletter__checbox{
+    border-radius: 50%;
+    border: none;
+    margin-top: 16px;
+    margin-left: 0px;
+    margin-right: 12px;
+}
+.newsletter__checkdiv{
+    display: flex;
+    width: 36.6%;
+    font-size: 14px;
+}
+@media only screen and (max-width: 1400px) {
+    .newsletter__checbox {
+        margin-right: 5px;
+    }
+    .newsletter__checkdiv {
+        width:51%;
+    }
+}
