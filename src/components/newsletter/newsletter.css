@@ -35,7 +35,7 @@
     margin-top: 70px;
     display: flex;
 }
-.newsletter__inputbox > input{
+.newsletter__input {
     height: 45px;
     width: 300px;
     margin-right: 25px;
@@ -44,15 +44,16 @@
     color: rgba(0, 0, 0, 0.616);
 }
 .newsletter__inputbox>button {
-    height: 53px;
+    height: 45px;
     width: 140px;
     background-color:#8E0C15;
     color: white;
     font-weight: bold;
     font-size: 18px;
-    outline: none;
     border: none;
-    padding: 0px;
+}
+.newsletter__inputbox>button>p {
+    margin: 0px;
 }
 .newsletter__checbox{
     border-radius: 50%;

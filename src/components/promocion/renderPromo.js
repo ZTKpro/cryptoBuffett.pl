@@ -1,5 +1,7 @@
-import React,{Component} from 'react';
+import React from 'react';
 import { StaticQuery, graphql } from "gatsby";
+
+const seoText = " Promocja jak zarobić szybie pięniadzę bankowe"
 
 const genPromoction = () =>(
     <StaticQuery
@@ -15,6 +17,7 @@ const genPromoction = () =>(
                             id
                             url
                         }
+                        opisObrazka
                     }
                 }
             }
@@ -22,12 +25,12 @@ const genPromoction = () =>(
         render={({promoction: { promocjes }}) => (
             <div>
                 { promocjes.map(promocje => (
-                    <div className="promoction__item">
+                    <div key={promocje.id} className="promoction__item">
                         <div  className="promoction__imgbox" >
-                            <img src={promocje.zdjecie.url} alt="promoction"></img>
+                            <img src={promocje.zdjecie.url} alt={promocje.opisObrazka + seoText}></img>
                         </div>
                         <div className="promoction__textbox">
-                            <h3>{promocje.tytul}</h3>
+                            <h3 id="tittlePromoction">{promocje.tytul}</h3>
                             <p>{promocje.krotkiOpis}</p>
                             <p>11 listopad 2020</p>
                         </div>

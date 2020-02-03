@@ -5,7 +5,7 @@ import './about.css';
 class about extends Component{
     render() {
      return(
-        <div className="about">
+        <div id="aboutUs" className="about">
            <h3>O nas</h3>
            <p>Jesteśmy grupką przedsiębiorców którzy  dającą możliwość efektywnego, szybkiego i bezpiecznego zarabiania dużych pieniędzy w internecie bez wychodzenia z domu dla wszystkich naszych członków i subskrybentów.</p> 
         </div>

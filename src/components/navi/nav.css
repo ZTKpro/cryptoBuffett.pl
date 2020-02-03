@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 45%;
+    width: 40%;
     font-size: 24px;
     margin-right: 5%;
 }
@@ -28,10 +28,14 @@
     width: 40px;
     background-color: rgba(255, 255, 255, 0.096);
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.nav__loupe>img{
-    height: 80%;
-    width: auto;
+.nav__loupeimg{
+    margin-top: 5px;
+    height: 32px;
+    width: 32px;
 }
 .nav__input{
     margin-left: 3px;
@@ -45,10 +49,11 @@
     font-size: 18px;
     border-left: 1px solid rgba(255, 255, 255, 0.459);
 }
-p{
-    opacity: .8;
+.nav__link {
+    opacity: .9;
+    cursor: pointer;
 }
-p:hover{
+.nav__link:hover {
     opacity: 1;
 }
 @media only screen and (max-width: 1400px) {

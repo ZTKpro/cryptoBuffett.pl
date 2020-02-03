@@ -7,16 +7,12 @@ class footer extends Component{
      return(
         <footer>
             <div className="footer">
-                <div className="footer__newspromoction">
-                    <h3>Najnowsze promocje:</h3>
-                    <ul>
-                        <li className="footer__item">
-                            <p className="footer__itemtittle">Twisto czyli 50zł w 5minut</p>
-                            <p className="footer__itemdata">15.10.2020</p>
-                        </li>
-                    </ul>
+                <p>© Crypto_Buffet 2019-2020 Wszelkie prawa zastrzeżone | Projekt strony & wykonanie: Dswebsite.pl</p>
+                <div>
+                    <img></img>
+                    <img></img>
+                    <img></img>
                 </div>
-                <div className="footer__fanpage"></div>
             </div>
         </footer>
      )   

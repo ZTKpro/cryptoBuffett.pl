@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
 import '../components/global.css'
 
 import Navi from '../components/navi/nav.js'
@@ -11,6 +11,10 @@ import Footer from '../components/footer/footer.js'
 
 const IndexPage = () => (
   <div>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>Crypto_Buffet</title>
+    </Helmet>
     <Navi />
     <Header />
     <About />

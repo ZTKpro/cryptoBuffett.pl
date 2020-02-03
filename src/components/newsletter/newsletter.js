@@ -10,7 +10,9 @@ class newsletter extends Component{
                 <h2>Chcesz być na bieżąco z promocjami?</h2>
                 <p>Zapisz się na nasz newslleter</p>
                 <div className="newsletter__inputbox">
-                    <input placeholder="Email" type="email" />
+                    <label htmlFor="newslatter">
+                        <input className="newsletter__input" placeholder="Email" name="newslatter" type="email" />
+                    </label>
                     <button className="btn"><p>ZAPISZ SIĘ</p></button>
                 </div>
                 <div className="newsletter__checkdiv">
