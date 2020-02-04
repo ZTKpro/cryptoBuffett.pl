@@ -15,8 +15,8 @@
 }
 .header__textcenter{
     height: 100px;
-    width: 1000px;
-    position: absolute;
+    width: 99vw;
+    position: absolute; 
     top: 42%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -56,6 +56,16 @@
     .header__button {
         bottom: 0%;
     }
-
-
+    .header__textcenter>h2 {
+        font-size: 45px;
+    }
+}
+@media only screen and (max-width: 1400px) {
+ .header__textcenter>h2 {
+     font-size: 22px;
+ }
+ .header__textcenter>p {
+     font-size: 15px;
+     width: 80%;
+ }
 }
