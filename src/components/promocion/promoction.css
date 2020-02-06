@@ -80,18 +80,21 @@
         font-size: 30px;
     }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
     .promoction {
         padding: 20px 15px;
     }
     .promoction__imgbox {
-         height: 250px;
-         width: 95%;
+         height: 180px;
+         width: 180px;
          margin-bottom: 20px;
+         border: none;
+        margin: 0px;
+        margin-bottom: 15px;
      }
     .promoction__imgbox>img {
-        width: auto;
-        height: 250px;
+        height: 180px;
+        width: 180px;
     }
     .promoction__item {
         width: 95%;
