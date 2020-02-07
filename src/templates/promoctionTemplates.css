@@ -28,3 +28,19 @@
 .templates__tittle{
     font-size: 42px;
 }
+@media only screen and (max-width: 1400px) {
+   .templates__box {
+       width: 90vw;
+       padding-bottom: 50px;
+   }
+}
+
+@media only screen and (max-width: 900px) {
+ .templates__box {
+     width: 95vw;
+     padding-bottom: 50px;
+ }
+ .templates__howtoearn {
+     width: 90%;
+    }
+}
