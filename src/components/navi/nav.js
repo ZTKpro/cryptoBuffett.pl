@@ -2,7 +2,6 @@ import React,{Component} from 'react';
 import './nav.css';
 import {Link} from "gatsby"
 
-import bgNav from './img/backgroundNav.png'
 import NavItem from './navItem.js';
 
 const handleScroll = () => {

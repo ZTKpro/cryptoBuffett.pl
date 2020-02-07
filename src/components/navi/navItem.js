@@ -34,11 +34,11 @@ const search = (e) =>{
     result = result.filter(listItem => listItem.textContent.toUpperCase().includes(currentWord))
 
     for (let i = 0; i < listItem.length; i++) {
-    listItem[i].parentElement.parentElement.style.display = "none"
-    listItem[i].parentElement.parentElement.style.borderBottom = "none"
+        listItem[i].parentElement.parentElement.parentElement.style.display = "none"
+        listItem[i].parentElement.parentElement.parentElement.style.borderBottom = "none"
     }
     for(let i = 0;i < result.length; i++){
-        result[i].parentElement.parentElement.style.display = ""
+        result[i].parentElement.parentElement.parentElement.style.display = ""
     }
     document.getElementById("showMore").style.display = "none"
 } 

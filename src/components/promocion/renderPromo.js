@@ -22,7 +22,7 @@ const genPromoction = () =>(
                     }
                 }
             }
-        `}
+        `} 
         render={({promoction: { promocjs }}) => (
             <div>
                 { promocjs.map(promocj => (

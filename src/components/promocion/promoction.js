@@ -24,7 +24,7 @@ const showMore = (e) => {
 
 class promoction extends Component{
 
-    componentDidMount(){
+    componentDidMount(){ 
         hiddenItem()
     }
     render() {
