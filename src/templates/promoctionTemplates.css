@@ -37,9 +37,15 @@
 }
 
 @media only screen and (max-width: 900px) {
- .templates__box {
-     width: 95vw;
- }
+    .templates__box {
+        width: 95vw;
+    }
+    .templates__img {
+        width: 100%;
+    }
+    .navTemp_h2 {
+        font-size: 28px;
+    }
  .templates__howtoearn {
      width: 90%;
     }

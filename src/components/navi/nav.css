@@ -55,6 +55,7 @@
 .nav__link {
     opacity: .9;
     cursor: pointer;
+    color: white;
 }
 .nav__link:hover {
     opacity: 1;

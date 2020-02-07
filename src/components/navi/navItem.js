@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
-
 import loupe from './img/loupe.png'
 
 const searchCollapse = (e) =>{

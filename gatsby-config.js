@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Crypto Buffet`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Jesteśmy średniej wielkości zjednoczeniem specjalistów z szeroko pojętych dziedzin - online marketingu, programów partnerskich i afiliacyjnych. Pomagamy zaprzyjaźnionym firmom wdrążać promocje marketingowe i sprawować nad nimi opiekę i kontrolę.`,
     author: `DS website`,
   },
   plugins: [

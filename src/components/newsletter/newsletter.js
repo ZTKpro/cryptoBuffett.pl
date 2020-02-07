@@ -1,6 +1,26 @@
 import React,{Component} from 'react';
 import './newsletter.css';
 
+let emailIsValid = false;
+
+const validateemail = (e) =>{
+    if(e.target.value.length < 3){
+        e.target.style.boxShadow = "0px 0px 10px red"
+        e.target.style.border = "1px solid red"
+        e.target.style.color = "red"
+    }else{
+        e.target.style.boxShadow = ""
+        e.target.style.border = ""
+        e.target.style.color = ""
+        emailIsValid = true
+        return emailIsValid;
+    }
+    
+}
+
+const checkIn = () =>{
+    alert(emailIsValid)
+}
 
 class newsletter extends Component{
     render() {
@@ -11,9 +31,9 @@ class newsletter extends Component{
                 <p>Zapisz się na nasz newslleter</p>
                 <div className="newsletter__inputbox">
                     <label htmlFor="newslatter">
-                        <input className="newsletter__input" placeholder="Email" name="newslatter" type="email" />
+                        <input id="newslatter" onChange={validateemail} className="newsletter__input" placeholder="Email" name="newslatter" type="email" />
                     </label>
-                    <button className="btn"><p>ZAPISZ SIĘ</p></button>
+                    <button onClick={checkIn} className="btn"><p>ZAPISZ SIĘ</p></button>
                 </div>
                 <div className="newsletter__checkdiv">
                     <input className="newsletter__checbox" type="checkbox" />
@@ -23,6 +43,7 @@ class newsletter extends Component{
                     </p>
                 </div>
             </div>
+            <div className="newsletter__thanks">Dziękujemy za zajerestrowanie się do naszego newslattera</div>
         </div>
      )   
     }

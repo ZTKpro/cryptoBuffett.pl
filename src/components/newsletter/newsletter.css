@@ -1,4 +1,5 @@
 .newsletter{
+    position: relative;
     height: 380px;
     width:99vw;
     padding: 0 140px;
@@ -60,6 +61,16 @@
     width: 36.6%;
     font-size: 14px;
 }
+.newsletter__thanks{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+    display: none;
+}
 @media only screen and (max-width: 1400px) {
     .newsletter__checbox {
         margin-right: 5px;
@@ -70,6 +81,7 @@
     .newsletter {
         background-attachment: local;
         padding: 0 50px;
+     
     }
 }
 @media only screen and (max-width: 800px) {
