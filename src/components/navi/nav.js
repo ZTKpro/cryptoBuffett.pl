@@ -7,11 +7,11 @@ import NavItem from './navItem.js';
 
 const handleScroll = () => {
 
+    if (window.location.pathname == '/') {
     const navi = document.getElementById('nav')
-
-    if (window.pageYOffset > 1) {navi.style.backgroundImage = `url(${bgNav})`
-    }else{navi.style.backgroundImage = "" }
-
+        if (window.pageYOffset > 1) {navi.style.backgroundImage = ""
+        }else{navi.style.backgroundImage = "none" }
+    }
 }
 
 const openHiddenNav = () =>{
@@ -33,15 +33,16 @@ const openHiddenNav = () =>{
 }
 
 class nav extends Component{
-
- componentDidMount() {
-     window.addEventListener("scroll", handleScroll);
- }
+    componentDidMount(){
+     document.addEventListener("scroll",handleScroll)
+    }
     
     render() {
-     return(
-            <nav>
-                <div id="nav" className="nav__content">
+    return(
+        <nav>
+                < div
+                id = "nav"
+                className = "nav__content" >
                     <Link to="/"><h1 className="nav__link">Crypto_Buffett</h1></Link> 
                     <NavItem />
                     <div onClick={openHiddenNav} className="nav__hamburger">

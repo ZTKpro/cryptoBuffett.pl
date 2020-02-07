@@ -29,7 +29,7 @@ module.exports = {
     }, {
       resolve: "gatsby-source-graphql",
       options: {
-        typeName: "Promoction",
+        typeName: "promoction",
         fieldName: "promoction",
         url: "https://api-euwest.graphcms.com/v1/ck622337z6rsx01939stpax81/master",
       },

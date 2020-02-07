@@ -5,6 +5,9 @@
     padding: 20px 150px 20px;
     z-index: 2;
 }
+.promoction__item>a {
+    color: black;
+}
 .promoction__h{
     padding-top:25px ;
     margin-top: 0px;

@@ -1,0 +1,43 @@
+
+.badurl__boxcenter{ 
+    color:white;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    background-color: gray;
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.badurl__boxcenter>h2 {
+    font-size: 120px;
+    margin-bottom: 0px;
+}
+
+.badurl__boxcenter>p {
+margin-top: 0px;
+font-size: 25px;
+}
+.badurl__btnbox{
+    width: 20vw;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 120px;
+}
+.badurl__btn{
+    border-radius: 25px;
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.badurl__btn:hover {
+    background-color: white;
+    color: grey;
+}
