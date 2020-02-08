@@ -40,6 +40,7 @@
     width: 80%;
 }
 .promoction__textbox>p {
+    white-space: pre-line;
     width: 80%;
     margin-left: 5px;
 }

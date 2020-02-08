@@ -1,6 +1,8 @@
 .templates{
     padding-top: 80px;
     background-color: rgb(182, 182, 182);
+    background-image: url('./background.png');
+    background-size: cover;
 }
 .templates__box{
     margin: 50px auto;

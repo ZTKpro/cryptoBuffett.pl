@@ -19,7 +19,12 @@ const validateemail = (e) =>{
 }
 
 const checkIn = () =>{
-    alert(emailIsValid)
+    if(emailIsValid == true ){
+      const newslatterBox =  document.getElementsByClassName('newsletter__textbox')
+      const newslatterThanks = document.getElementsByClassName('newsletter__thanks')
+    newslatterBox[0].style.display = "none"
+    newslatterThanks[0].style.display = "block"
+    }
 }
 
 class newsletter extends Component{
