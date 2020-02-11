@@ -1,5 +1,4 @@
 import React from "react"
-import {Link} from "gatsby"
 import Footer from '../components/footer/footer'
 import loupe from '../components/navi/img/loupe.png'
 import './promoctionTemplates.css'
@@ -30,17 +29,17 @@ const closeNav = (e) =>{
 const promoctionTemplates = ({pageContext:{data}}) => (
     <div className="templates">
         <div className = "nav__content" >
-            <Link to="/"><h2 className="nav__link navTemp_h2">Crypto_Buffet</h2></Link> 
+            <a href="/"><h2 className="nav__link navTemp_h2">Crypto_Buffet</h2></a> 
             <div id="navContent"  className="nav__contentbox">
         
-                    <Link to="/" ><p className="nav__link">O nas</p></Link> 
-                    <Link onClick={closeNav} to="/"><p className="nav__link">Szybkie Metody Zarobku</p></Link> 
-                    <Link to="/" >
+                    <a href="/" ><p className="nav__link">O nas</p></a> 
+                    <a onClick={closeNav} to="/"><p className="nav__link">Szybkie Metody Zarobku</p></a> 
+                    <a href="/" >
                         <div id="searchInput"  className="nav__loupe btn">
                             <img  className="nav__loupeimg" src={loupe} alt="magnetfier"></img>
                             <input  id="navInput" className="nav__input" type="text" />
                         </div> 
-                    </Link>
+                    </a>
                 </div>
             <div onClick={openHiddenNav} className="nav__hamburger">
                 <div  className="nav__hamburger-top nav__hamburgerItem"></div>
@@ -52,7 +51,15 @@ const promoctionTemplates = ({pageContext:{data}}) => (
             <img className="templates__img" src={data.zdjecie.url} alt={data.opisObrazka}></img>
             <p className="templates__importanttext">{data.wazneInformacje}</p>
             <h3 className="templates__tittle">Instrukcja</h3>
-            <p className="templates__howtoearn">{data.jakNaTymZarobic}</p>
+            <p className="templates__howtoearn">
+                {data.pierwszyKrok}
+                <a className="templates__link" target="_blank" href={data.link}>{data.link}</a>
+                {data.jakNaTymZarobic}
+            </p>
+        </div>
+        <div className="templates__help">
+            <h3 className="templates__tittle templates__helph">Potrzebujesz pomocy?</h3>
+            <a href="https://m.me/115325723262146?ref=Lista%20promo" target="_blank"><div className="templates__btn btn">NAPISZ</div></a>
         </div>
         <Footer className="templates__footer"/>
     </div>    

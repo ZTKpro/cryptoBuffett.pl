@@ -19,6 +19,7 @@ const genPromoction = () =>(
                         }
                         opisObrazka
                         podstrona
+                        dataDodania
                     }
                 }
             }
@@ -34,7 +35,7 @@ const genPromoction = () =>(
                             <div className="promoction__textbox">
                                 <h3 id="tittlePromoction">{promocj.tytul}</h3>
                                 <p>{promocj.krotkiOpis}</p>
-                                <p>11 listopad 2020</p>
+                                <p>{promocj.dataDodania}</p>
                             </div>
                         </Link>
                     </div>

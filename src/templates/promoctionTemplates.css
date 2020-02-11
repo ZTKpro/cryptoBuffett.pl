@@ -4,6 +4,13 @@
     background-image: url('./background.png');
     background-size: cover;
 }
+.templates__link{
+    color: black;
+    opacity: .8;
+ }
+ .templates__link:hover{
+     opacity: 1;
+ }
 .templates__box{
     margin: 50px auto;
     width: 50vw;
@@ -31,6 +38,27 @@
 .templates__tittle{
     font-size: 42px;
 }
+.templates__help{
+    margin: 50px auto;
+    width: 50vw;
+    box-shadow: 0px 0px 15px grey;
+    overflow: hidden;
+    padding: 25px;
+    background-color: white;
+    padding-bottom: 50px;
+}
+.templates__btn{
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #3b5998;
+    color: white;
+    font-weight: bold;
+    opacity: .9;
+}
+.templates__btn:hover{
+    opacity: 1;
+}
 @media only screen and (max-width: 1400px) {
    .templates__box {
        width: 90vw;
@@ -42,6 +70,9 @@
     .templates__box {
         width: 95vw;
     }
+    .templates__help{
+        width: 95vw;
+    }
     .templates__img {
         width: 100%;
     }
@@ -50,5 +81,10 @@
     }
  .templates__howtoearn {
      width: 90%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .templates__helph{
+        font-size: 33px;
     }
 }

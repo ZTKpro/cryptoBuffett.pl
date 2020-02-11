@@ -25,28 +25,21 @@
     opacity: .8;
     font-size: 22px;
 }
-.newsletter__inputbox{
+.newslatter__btn{
     margin-top: 70px;
-    display: flex;
-}
-.newsletter__input {
-    height: 45px;
     width: 300px;
-    margin-right: 25px;
-    text-align: center;
-    font-size: 20px;
-    color: rgba(0, 0, 0, 0.616);
+    height: 60px;
+    background-color: #3b5998;
+    border: none;
+    opacity: .9;
 }
-.newsletter__inputbox>button {
-    height: 45px;
-    width: 140px;
-    background-color:#8E0C15;
+.newslatter__btn:hover{
+    opacity: 1;
+}
+.newslatter__btn > p{
     color: white;
     font-weight: bold;
-    font-size: 18px; 
-    border: none;
-}
-.newsletter__inputbox>button>p {
+    font-size: 18px;
     margin: 0px;
 }
 .newsletter__checbox{
@@ -85,51 +78,39 @@
     }
 }
 @media only screen and (max-width: 800px) {
+    .newslatter{
+        height: 250px;
+    }
     .newsletter__checkdiv {
         width: 95%;
     }
-    .newsletter__inputbox {
-        margin-top: 30px;
-    }
-}
-@media only screen and (max-width: 800px) {
-    .newsletter__inputbox {
-        margin-top: 70px;
+    .newslatter__btn {
+        margin-top: 50px;
         display: flex;
         width: 90%;
     }
-    .newsletter__input {
-        height: 45px;
-        width: 95%;
-        margin-right: 25px;
+    .newsletter__textbox {
         text-align: center;
-        font-size: 20px;
-        color: rgba(0, 0, 0, 0.616);
     }
-    .newsletter__inputbox>button {
-        height: 45px;
-        width: 40%;
-        background-color: #8E0C15;
-        color: white;
-        font-weight: bold;
-        font-size: 14px;
-        border: none;
+    .newsletter__textbox > h2{
+        font-size: 45px;
     }
 }
 @media only screen and (max-width: 600px) {
     .newsletter{
+        height: 260px;
         padding: 15px;
         background-size: 200%;
     }
     .newsletter__textbox>h2 {
-        font-size: 24px;
+        font-size: 28px;
         margin-bottom: 0px;
     }
     .newsletter__textbox>p{
         font-size: 16px;
         margin-bottom: 0px;
     }
-    .newsletter__inputbox {
+    .newslatter__btn {
         margin-top: 30px;
         display: flex;
         width: 90%;

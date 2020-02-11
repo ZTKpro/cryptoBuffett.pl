@@ -17,9 +17,10 @@ exports.createPages = async ({graphql,  actions, reporter }) => {
                     }
                     opisObrazka
                     podstrona
+                    pierwszyKrok
+                    link
                     jakNaTymZarobic
                     wazneInformacje
-                    dlaCiekawskich
                 }
             }
         }

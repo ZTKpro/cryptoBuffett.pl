@@ -2,7 +2,7 @@
     height: 100px;
     width: 99vw;
     background-color: rgb(82, 82, 82);
-    padding: 5px 50px;
+    padding: 0px 60px;
     color: white;
     display: flex;
     align-items: center;
@@ -13,6 +13,6 @@
 } 
 @media only screen and (max-width: 600px) {
     .footer {
-        padding: 15px 15px 130px;
+        padding: 80px 50px;
     }
 }
