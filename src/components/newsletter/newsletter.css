@@ -1,7 +1,7 @@
 .newsletter{
     position: relative;
     height: 380px;
-    width:99vw;
+    width:100%;
     padding: 0 140px;
     position: relative;
     background-image: url('./img/backgroundNe.jpg');
@@ -29,6 +29,7 @@
     margin-top: 70px;
     width: 300px;
     height: 60px;
+    margin: 0 auto;
     background-color: #3b5998;
     border: none;
     opacity: .9;
@@ -65,12 +66,6 @@
     display: none;
 }
 @media only screen and (max-width: 1400px) {
-    .newsletter__checbox {
-        margin-right: 5px;
-    }
-    .newsletter__checkdiv {
-        width: 51%;
-    }
     .newsletter {
         background-attachment: local;
         padding: 0 50px;
@@ -115,4 +110,4 @@
         display: flex;
         width: 90%;
     }
-}
+} 

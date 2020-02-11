@@ -1,6 +1,6 @@
 .footer{
     height: 100px;
-    width: 99vw;
+    width: 100%;
     background-color: rgb(82, 82, 82);
     padding: 0px 60px;
     color: white;
@@ -15,4 +15,4 @@
     .footer {
         padding: 80px 50px;
     }
-}
+} 

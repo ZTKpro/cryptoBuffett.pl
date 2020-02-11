@@ -1,6 +1,6 @@
 .about{
     height: 100%;
-    width: 99vw;
+    width: 100%;
     padding: 80px;
     background-color: white;
     z-index: 2;
@@ -10,7 +10,7 @@
 .about > h3{
     font-size: 50px;
     margin-top: 0px;
-}
+} 
 .about > p {
     width: 60%;
     font-size: 28px;
