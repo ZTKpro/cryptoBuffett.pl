@@ -4,6 +4,10 @@
     background-color: #F5F5F5;
     padding: 20px 150px 20px;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .promoction__item>a {
     color: black;
@@ -19,6 +23,7 @@
     padding: 30px 0px; 
     height: 325px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.596);
+    max-width: 1300px;
 }
 .promoction__imgbox {
     height: 260px;
@@ -37,11 +42,9 @@
 .promoction__textbox>h3 {
     font-size: 42px;
     margin: 0px;
-    width: 80%;
 }
 .promoction__textbox>p {
     white-space: pre-line;
-    width: 80%;
     margin-left: 5px;
 }
 .promoction__showmore{
@@ -89,18 +92,21 @@
         padding: 20px 15px;
     }
     .promoction__imgbox {
-         height: 180px;
-         width: 180px;
+         height: 250px;
+         width: 100%;
          margin-bottom: 20px;
          border: none;
-        margin: 0px;
+        margin: 0 auto;
         margin-bottom: 15px;
      }
     .promoction__imgbox>img {
-        height: 180px;
-        width: 180px;
+        height: 100%;
+        width: 80%;
     }
     .promoction__item {
         width: 95%;
+    }
+    .promoction__textbox>h3 {
+        font-size: 25px;
     }
 }
